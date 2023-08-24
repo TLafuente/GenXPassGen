@@ -1,2 +1,1 @@
-# Module-3-parakeet
-3rd module
+# Password Generator Starter Code
