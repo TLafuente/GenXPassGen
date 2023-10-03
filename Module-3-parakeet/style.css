@@ -1,84 +1,54 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+/* Update font-family to a western-style font */
 body {
-  font-family: sans-serif;
+  font-family: 'Old West', cursive; /* You can specify an appropriate western font here */
   background-color: #f9fbfd;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
+/* Style the header with a western look */
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #8B4513; /* Brown color for an old west feel */
+  font-size: 36px; /* Larger font size for the title */
 }
 
+/* Give the card a parchment-like background */
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
+  background-color: #F5DEB3; /* A light beige for a parchment-like background */
+  border-radius: 10px; /* Rounded corners for the vault appearance */
+  border: 2px solid #8B4513; /* A brown border to resemble a vault */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: #8B4513; /* Brown color for text */
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
 }
 
+/* Style the card header with a western touch */
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #D2B48C; /* A slightly darker beige for header background */
   height: 2px;
 }
 
-.card-body {
-  min-height: 100px;
-}
-
+/* Style the card footer with a similar header style */
 .card-footer {
   text-align: center;
+  background: #D2B48C; /* Use the same beige color as the header */
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners for the footer */
 }
 
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
+/* Style the button to have a wooden appearance */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #8B4513; /* Brown color for the button resembling wood */
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  color: #FFF; /* White text for better contrast */
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -86,17 +56,16 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  text-shadow: 1px 1px 2px #A0522D; /* Add a subtle shadow for a 3D effect */
 }
 
+/* Style the button when it's disabled */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
-
+/* Style the textarea to resemble an old parchment */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -112,26 +81,12 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  background-color: #F5DEB3; /* Match the card's background */
+  border: 2px dashed #8B4513; /* Brown dashed border like a parchment */
   border-radius: 6px;
   resize: none;
   overflow: hidden;
-}
-
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
+  color: #8B4513; /* Brown text color */
+  font-family: 'Old West', cursive; /* Apply the western font */
+  line-height: 1.4; /* Increase line-height for readability */
 }
